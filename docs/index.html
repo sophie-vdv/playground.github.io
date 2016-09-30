@@ -18,6 +18,17 @@
     <img src="assets/playground.png" alt="#">
     <span>So much code <br> So much fun</span>
 </div>
+
+<div class="command">
+    &#65514;
+    &#65514;
+    &#65516;
+    &#65516;
+    &#65513;
+    &#65515;
+    &#65513;
+    &#65515;
+</div>
 <div class="content-container">
     <div class="title">Playground</div>
 
@@ -51,7 +62,28 @@
         </a>
     </div>
 </div>
+
+
+<div class="carlton img-easter">
+    <img src="assets/carlton.gif" alt="">
+</div>
+<div class="bean img-easter">
+    <img src="assets/bean11.gif" alt="">
+</div>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="js/main.min.js"></script>
+
+<script>
+    if (window.addEventListener) {
+        var kkeys = [], konami = "38,38,40,40,37,39,37,39";
+        window.addEventListener("keydown", function (e) {
+            kkeys.push(e.keyCode);
+            if (kkeys.toString().indexOf(konami) >= 0) {
+                $(".img-easter").fadeIn(200);
+            }
+        }, true);
+    }
+</script>
 </html>
