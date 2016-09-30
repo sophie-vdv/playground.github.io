@@ -11,6 +11,17 @@ body {
   margin      : 0;
 }
 
+.logo-github {
+  position : absolute;
+  right    : 60px;
+  top      : 60px;
+
+  @media only screen and (max-width : 900px) {
+    right : 20px;
+    top   : 30px;
+  }
+}
+
 .logo {
   font-size      : 10px;
   letter-spacing : 2px;
@@ -22,16 +33,19 @@ body {
   font-weight    : 300;
   line-height    : 16px;
 
-  @media only screen and (max-width : 530px) {
+  span {
+    border-left  : 2px solid white;
+    padding-left : 16px;
+  }
+
+  @media only screen and (max-width : 900px) {
     left : 20px;
     top  : 20px;
   }
 
   img {
-    width         : 60px;
-    margin-right  : 16px;
-    border-right  : 1px solid white;
-    padding-right : 16px;
+    width        : 60px;
+    margin-right : 16px;
   }
 }
 
@@ -96,7 +110,7 @@ body {
     }
 
     @media only screen and (max-width : 530px) {
-      width  : 40%;
+      width : 40%;
     }
   }
   .case {

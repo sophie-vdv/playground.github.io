@@ -8,6 +8,17 @@ body {
   font-family: Helvetica;
   margin: 0;
 }
+.logo-github {
+  position: absolute;
+  right: 60px;
+  top: 60px;
+}
+@media only screen and (max-width: 900px) {
+  .logo-github {
+    right: 20px;
+    top: 30px;
+  }
+}
 .logo {
   font-size: 10px;
   letter-spacing: 2px;
@@ -19,7 +30,11 @@ body {
   font-weight: 300;
   line-height: 16px;
 }
-@media only screen and (max-width: 530px) {
+.logo span {
+  border-left: 2px solid white;
+  padding-left: 16px;
+}
+@media only screen and (max-width: 900px) {
   .logo {
     left: 20px;
     top: 20px;
@@ -28,8 +43,6 @@ body {
 .logo img {
   width: 60px;
   margin-right: 16px;
-  border-right: 1px solid white;
-  padding-right: 16px;
 }
 .content-container {
   text-align: center;
