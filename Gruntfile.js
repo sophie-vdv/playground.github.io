@@ -48,6 +48,10 @@ module.exports = function (grunt) {
             html    : {
                 files : ['docs/*.html'],
                 tasks : ['build']
+            },
+            js    : {
+                files : ['src/js/*.js'],
+                tasks : ['uglify']
             }
         },
         connect : {

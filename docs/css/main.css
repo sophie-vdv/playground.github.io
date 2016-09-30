@@ -5,31 +5,75 @@ body {
   width: 100vw;
   height: 100vh;
   color: #fff;
+  font-family: Helvetica;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  font-size: 11px;
+  letter-spacing: 4px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  font-weight: 300;
+}
+.logo img {
+  width: 60px;
+  margin-right: 16px;
 }
 .content-container {
   text-align: center;
-  margin-top: -100px;
+  margin-top: 120px;
 }
 .content-container .title {
-  font-family: "streamster";
+  font-family: "MarkMyWords";
   font-size: 66px;
-  transform: rotate(-2deg);
 }
 @media only screen and (max-width: 500px) {
   .content-container .title {
     font-size: 50px;
   }
 }
-/*
-
+.content {
+  margin-top: 120px;
+}
+.content a {
+  color: #fff;
+  font-family: Helvetica;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 120px;
+}
+.content .case {
+  display: inline-block;
+  width: 200px;
+  height: 120px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 0 16px;
+  background-image: linear-gradient(to top, transparent, transparent 50%, #fff 50%, #fff);
+  background-position: 0 100%;
+  background-size: 100% 200%;
+  transition: all 0.25s ease-in;
+}
+.content .case:hover {
+  background-position: 0 0;
+  color: #e44542;
+}
+.content .case:first-child {
+  margin-left: 0;
+}
+.content .case:last-child {
+  margin-left: 0;
+}
 @font-face {
-  font-family : 'streamster';
-  src         : url('streamster-webfont.woff') format('woff'),
-  url('Streamster.ttf') format('truetype');
-  font-weight : 900;
-  font-style  : normal;
-}*/
+  font-family: 'MarkMyWords';
+  src: url('../fonts/MarkMyWords.eot?#iefix') format('../fonts/embedded-opentype'), url('../fonts/MarkMyWords.woff') format('woff'), url('../fonts/MarkMyWords.ttf') format('truetype'), url('../fonts/MarkMyWords.svg#MarkMyWords') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
