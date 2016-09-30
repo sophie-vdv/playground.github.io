@@ -91,15 +91,7 @@ body {
 }
 @media only screen and (max-width: 530px) {
   .content a {
-    width: 96%;
-    margin: 16px 0;
-    float: inherit;
-  }
-  .content a:first-child {
-    margin-left: 0;
-  }
-  .content a:last-child {
-    margin-right: 0;
+    width: 40%;
   }
 }
 .content .case {
