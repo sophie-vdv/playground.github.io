@@ -1,9 +1,6 @@
 @white : #fff;
 
 body {
-  background  : #e53935;
-  background  : -webkit-linear-gradient(to left, #e53935, #e35d5b);
-  background  : linear-gradient(to left, #e53935, #e35d5b);
   width       : 100vw;
   height      : 100vh;
   color       : @white;
@@ -11,10 +8,35 @@ body {
   margin      : 0;
 }
 
+.section-1 {
+  background : #e53935;
+  background : -webkit-linear-gradient(to left, #e53935, #e35d5b);
+  background : linear-gradient(to left, #e53935, #e35d5b);
+}
+
+.section-2 {
+  background : #348F50; /* fallback for old browsers */
+  background : -webkit-linear-gradient(to left, #348F50, #56B4D3); /* Chrome 10-25, Safari 5.1-6 */
+  background : linear-gradient(to left, #348F50, #56B4D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section-3 {
+  background : #24C6DC; /* fallback for old browsers */
+  background : -webkit-linear-gradient(to left, #24C6DC, #514A9D); /* Chrome 10-25, Safari 5.1-6 */
+  background : linear-gradient(to left, #24C6DC, #514A9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section-4 {
+  background : #EC6F66; /* fallback for old browsers */
+  background : -webkit-linear-gradient(to left, #EC6F66, #F3A183); /* Chrome 10-25, Safari 5.1-6 */
+  background : linear-gradient(to left, #EC6F66, #F3A183); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .logo-github {
   position : absolute;
   right    : 60px;
   top      : 60px;
+  z-index  : 1;
 
   @media only screen and (max-width : 900px) {
     right : 20px;
@@ -32,6 +54,7 @@ body {
   top            : 40px;
   font-weight    : 300;
   line-height    : 16px;
+  z-index        : 1;
 
   span {
     border-left  : 2px solid white;
@@ -51,15 +74,10 @@ body {
 
 .content-container {
   text-align : center;
-  margin-top : 180px;
-
-  @media only screen and (max-width : 530px) {
-    margin-top : 140px;
-  }
 
   .title {
+    font-size   : 85px;
     font-family : "MarkMyWords";
-    font-size   : 72px;
 
     @media only screen and (max-width : 500px) {
       font-size : 50px;
@@ -155,7 +173,7 @@ body {
 
 .command {
   position  : absolute;
-  width     : 100%;
+  width     : auto;
   top       : 100px;
   left      : 60px;
   font-size : 20px;
